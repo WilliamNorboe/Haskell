@@ -3,7 +3,7 @@ meanh (x:xs) s len = meanh xs (s+x) (len+1)
 mean l = meanh l 0 0
 
 medianh l
- | even(length l) = ((l !! middle) + (l !! (middle-1)))/2
+ | even(length l) = ((l !! middle) + (l !!  (middle-1)))/2
  | otherwise = l !! middle
   where middle = length l `div` 2
 median l = medianh (quicksort l)
